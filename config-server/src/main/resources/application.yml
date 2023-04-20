@@ -1,0 +1,75 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: spring-config-server
+  profiles:
+    active: course,user
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:umeshn91/config-repo.git
+          ignoreLocalSshSettings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://ec2-13-126-98-244.ap-south-1.compute.amazonaws.com:8082/eureka
+      defaultZone: http://localhost:8082/eureka
